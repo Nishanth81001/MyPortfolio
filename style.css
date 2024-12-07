@@ -59,6 +59,7 @@ html{
 .skill-img{
     width:80px;
     height:80px;
+    padding:5px;
 }
 
 /* Custom gap for medium and large screens */
