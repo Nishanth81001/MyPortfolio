@@ -62,10 +62,6 @@ html{
     padding:8px;
 }
 
-.skill-img-container{
-    padding:20px;
-}
-
 /* Custom gap for medium and large screens */
 .custom-gap .col-md-4 {
     margin-right: 18px;
