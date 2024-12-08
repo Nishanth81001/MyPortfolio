@@ -59,7 +59,13 @@ html{
 .skill-img{
     width:80px;
     height:80px;
+<<<<<<< HEAD
     padding:8px;
+=======
+}
+.skill-img-container{
+    padding:20px;
+>>>>>>> dd2bfca (First commit fron local repo)
 }
 
 /* Custom gap for medium and large screens */
@@ -81,16 +87,41 @@ html{
     }
 }
 
-#Projects p{
-    font-weight: bold;
-    font-size: 18px;
+/* Ensure all cards are of equal height */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#Projects img{
-    border:1px solid black;
-    transition: all 0.5s ease-in-out;
+/* Uniform image size */
+.project-image {
+    width: 100%; /* Responsive */
+    height: 240px; /* Fixed height */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
 }
 
-#Projects img:hover{
-    transform:scale(1.1);
+/* Adjust project details */
+.project-details p {
+    text-align: justify;
+    font-size: 0.9rem;
+    color: #555;
 }
+
+/* Hover effects for cards */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Section background and shadow */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
