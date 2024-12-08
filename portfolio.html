@@ -43,7 +43,7 @@
       </div>
     </div>
   </nav>
-  <section id="Home mt-5">
+  <section id="Home" class="py-5 mb-5" >
     <div class="container mt-5">
         <div class="row g-3">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 profile-image p-5 d-flex justify-content-center align-item-center">
@@ -52,7 +52,7 @@
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 profile-detail p-5 d-flex justify-content-center align-item-center">
                 <div class="profile-info">
                     <div class="profile-name">
-                        <h1>Nishanth Ganesan</h1>
+                        <h1 class="fw-bold">Nishanth Ganesan</h1>
                     </div>
                     <div class="profile-designation">
                         <h5>Software Engineer</h5>
@@ -65,7 +65,7 @@
                             <a class="btn btn-primary" href="https://raw.githubusercontent.com/Nishanth81001/MyPortfolio/main/Nishanth Ganesan.pdf" download="Nishanth_Ganesan_Resume.pdf">Download CV</a>
                         </div>
                         <div class="Contact-btn">
-                            <a class="btn btn-outline-secondary" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdQLFly20ooqabor5-GGj43bfSvImaHk-oX1VBHMCdyOSEZFg/viewform?usp=sf_link">Contact</a>
+                            <a class="btn btn-outline-primary" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdQLFly20ooqabor5-GGj43bfSvImaHk-oX1VBHMCdyOSEZFg/viewform?usp=sf_link">Contact</a>
                         </div>
                     </div>
                 </div> 
@@ -73,7 +73,7 @@
         </div>
     </div>
   </section>
-  <section id="about-me" class="py-5">
+  <section id="about-me" class="py-5 bg-light">
     <div class="container">
         <div class="heading mb-4">
             <h3 class="text-center fw-bold">About Me</h3>
@@ -87,19 +87,19 @@
                 </div>
                 <div class="col-md-8">
                     <div class="row justify-content-center">
-                        <div class="col-5 col-sm-5 col-md-5 col-lg-5 p-4 border border-secondary rounded mb-3 me-2 mb-sm-0">
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-5 p-4  rounded mb-3 me-2 mb-sm-0 bg-white">
                             <h5 class="text-center"><span style="margin-right:3px;"><i class="fa fa-briefcase"></i></span>Experience</h5>
                             <p class="text-center ">1.5+ Years</p>
                             <p class="text-center">ASP.NET and database</p>
                         </div>
-                        <div class="col-5 col-sm-5 col-md-5 col-lg-5 p-4 border border-secondary  rounded">
+                        <div class="col-5 col-sm-5 col-md-5 col-lg-5 p-4  rounded bg-white">
                             <h5 class="text-center"><span style="margin-right:3px;"><i class="fa fa-university"></i></span>Education</h5>
                             <p class="text-center ">Bachelor of Engineering</p>
                             <p class="text-center">Grade : 8.9</p>
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-10 mt-4 p-4  mx-4 bg-primary  text-white rounded">
+                        <div class="col-10 mt-4 p-4  mx-4 bg-white rounded">
                             <h5>Experience Details</h5>
                             <p>Developed and optimized SQL queries for credit union banks, enhancing data performance and integrity. 
                                 Managed ETL processes with SSIS and supported internal ASP.NET web applications. Collaborated with teams
@@ -112,12 +112,12 @@
         </div>
     </div>
 </section>
-<section id="skills">
+<section id="skills" class="py-5 bg-light">
     <div class="container">
         <div class="skills-heading">
              <h3 class="text-center fw-bold">Skills</h3>
         </div>
-        <div class="row mt-4 justify-content-center g-3">
+        <div class="row mt-4 justify-content-center g-3 bg-white">
             <div class="col-10 col-sm-10 col-md-5 col-lg-5 css-skill-container me-1">
                 <div class="frontend-skill-heading  mt-2">
                     <h4 class="text-center fw-bold">Frontend</h4>
@@ -132,7 +132,7 @@
                     </div>                   
                 </div>
             </div>
-            <div class="col-10 col-sm-10 col-md-5 col-lg-5 css-skill-container ms-1">
+            <div class="col-10 col-sm-10 col-md-5 col-lg-5 css-skill-container ms-1 bg-white">
                 <div class="backend-skill-heading mt-2">
                     <h4 class="text-center fw-bold">Backend</h4>
                     <div class="row justify-content-center my-5 g-3">
@@ -150,31 +150,76 @@
         </div>
     </div>
 </section>
-<section id="Projects" class="py-5">
+<section id="Projects" class="py-5 bg-light">
     <div class="container">
         <h3 class="text-center fw-bold mb-4">Projects</h3>
         <div class="row g-4 justify-content-center">
+            <!-- Project 1 -->
             <div class="col-md-6 col-lg-4">
-                <div class="text-center p-3">
-                    <img src="https://raw.githubusercontent.com/Nishanth81001/MyPortfolio/main/Task Management.jpg" class="img-fluid rounded" style="width:280px;height:240px;" alt="Task Management System">
-                    <p class="mt-2">Task Management System</p>
+                <div class="project-card p-3 shadow-sm bg-white d-flex flex-column">
+                    <img src="https://raw.githubusercontent.com/Nishanth81001/MyPortfolio/main/Task Management.jpg" 
+                         class="project-image img-fluid rounded" 
+                         alt="Task Management System" style="height:300px;">
+                    <p class="mt-2 fw-bold text-center">Task Management System</p>
+                    <div class="project-details mt-auto">
+                        <p>
+                            This Task Management System is specifically designed for database teams to
+                             monitor task assignments and progress efficiently. It allows tracking of who assigned
+                              tasks to specific resources and their completion status for procedures and tables. 
+                              Users can identify procedure-related tables and indexes, find details about who created an index,
+                               and check current tasks with priorities. The application includes robust features like 
+                               session management, authentication, and authorization. Built using ASP.NET Core MVC, 
+                               it boasts a responsive design for seamless usability across devices.
+                        </p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Project 2 -->
             <div class="col-md-6 col-lg-4">
-                <div class="text-center p-3">
-                    <img src="https://raw.githubusercontent.com/Nishanth81001/MyPortfolio/main/Forms.PNG" class="img-fluid rounded" style="width:280px;height:240px;"  alt="Dynamic Form Creator">
-                    <p class="mt-2">Dynamic Form Creator</p>
+                <div class="project-card p-3 shadow-sm bg-white d-flex flex-column">
+                    <img src="https://raw.githubusercontent.com/Nishanth81001/MyPortfolio/main/Forms.PNG" 
+                         class="project-image img-fluid rounded" 
+                         alt="Dynamic Form Creator" style="height:300px;">
+                    <p class="mt-2 fw-bold text-center">Dynamic Form Creator</p>
+                    <div class="project-details mt-auto">
+                        <p>
+                            This project enables users to dynamically design and generate input forms with 
+                            various field types directly from the application interface. Alongside form creation, 
+                            corresponding database tables are automatically generated to store the entered data. 
+                            Users can view, update, or delete the saved records through a user-friendly interface.
+                            It leverages ADO.NET for database interactions, providing efficient CRUD functionality. The project emphasizes flexibility and 
+                             usability for real-time form management without requiring technical expertise. This 
+                             solution is ideal for businesses seeking dynamic data collection and management.                        </p>
+                    </div>
                 </div>
             </div>
+
+            <!-- Project 3 -->
             <div class="col-md-6 col-lg-4">
-                <div class="text-center p-3">
-                    <img src="https://raw.githubusercontent.com/Nishanth81001/MyPortfolio/main/Email signature.jpg" class="img-fluid rounded" style="width:280px;height:240px;"  alt="Email Signature Generator">
-                    <p class="mt-2">Email Signature Generator</p>
+                <div class="project-card p-3 shadow-sm bg-white d-flex flex-column">
+                    <img src="https://raw.githubusercontent.com/Nishanth81001/MyPortfolio/main/Email signature.jpg" 
+                         class="project-image img-fluid rounded" 
+                         alt="Email Signature Generator" style="height:300px;">
+                    <p class="mt-2 fw-bold text-center">Email Signature Generator</p>
+                    <div class="project-details mt-auto">
+                        <p>
+                            This project provides a web-based tool for creating customized email signatures. 
+                            Users can easily design professional signatures by inputting their name, title, 
+                            contact details, and company logo. The tool allows for various customization options 
+                            such as font style, size, and color, as well as adding social media icons.With  this tool, users can enhance their email 
+                             communication with a professional touch. Built with modern web technologies, it guarantees a 
+                             smooth and responsive experience. The project is built using ASP.NET Core MVC for efficient back-end processing 
+                             and front-end flexibility.                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+
 
 </body>
 </html>
